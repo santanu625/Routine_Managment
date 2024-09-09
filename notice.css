@@ -1,0 +1,22 @@
+.notice{
+    width: auto;
+    height: 500px;
+    background-image: url(notice.avif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#h1{
+    padding-left: 600px;
+    font-size: 50px;
+}
+.p{
+    width: 1200px;
+    background: none;
+    height: 320px;
+    margin-left: 160px;
+    margin-top: 40px;
+    font-family: sans-serif;
+}
+#output{
+    font-size: 20px;
+}

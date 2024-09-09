@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <script>
+        var userInput='santanu'//k
+        var userInput2='san@123'//k
+        function returnvalue(){
+             userInput = localStorage.getItem("name")  //k
+             userInput2 = localStorage.getItem("pas")  //k
+            
+
+        }
+        window.onload=returnvalue;
+        function login(){
+            var name=document.getElementById("name").value;
+            var pas=document.getElementById("pas").value;
+            if(name==='santanu'&&pas==='san@123'||name===userInput&&pas===userInput2){
+                window.location.href="welcom.html"
+            }
+            else{
+                document.getElementById("h1").textContent ='Invalid username and password'
+            }
+        }
+        function cancel(){
+            var value1=document.getElementById("name");
+            var value2=document.getElementById("pas");
+
+            value1.value="";
+            value2.value="";
+        }
+        function forget(){
+            window.location.href="forget.html"
+        }
+    </script>
+</head>
+<link rel="stylesheet" href="login.css">
+<body>
+    <div class="login">
+        <div class="login2">
+            <div class="img">
+             <img src="png-transparent-login-computer-icons-avatar-icon-monochrome-black-silhouette-thumbnail.png" alt="" width="150px">
+
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Enter UserName " id="name" required>
+            <input type="password" placeholder="Enter Password" id="pas" required>
+            <input type="submit" value="Login" id="button" onclick="login()">
+            <input type="button" value="cancel" id="cancel" onclick="cancel()">
+            <input type="button" value="forgot" id="forgot" onclick="forget()" >
+            </div>
+            
+        </div> 
+        <div class="text">
+            <h1>Login to your portal</h1>
+            <p id="h1"></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notice</title>
+    <script>
+        function displayUserInput() {
+            // Retrieve the value from local storage
+            var userInput = localStorage.getItem("text");
+            
+            // Display the value on the page
+            document.getElementById("output").textContent = userInput;
+        }
+        
+        window.onload = displayUserInput;
+    </script>
+</head>
+<link rel="stylesheet" href="notice.css">
+<body>
+    <div class="notice">
+        <h1 id="h1">Notice Board</h1>
+        <div class="p">
+            <pre id="output">
+            </pre>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <script>
+        function cancel(){
+            var value1=document.getElementById("name");
+            var value2=document.getElementById("pas");
+
+            value1.value="";
+            value2.value="";
+        }
+        function set(){
+            var name = document.getElementById("name").value;
+            var pas = document.getElementById("pas").value;
+            localStorage.setItem("name", name);
+            localStorage.setItem("pas", pas);
+            window.location.href = "index.html";
+        }
+    </script>
+</head>
+<link rel="stylesheet" href="login.css">
+<body>
+    <div class="login">
+        <div class="login2">
+            <div class="img">
+             <img src="forget.png" alt="" width="150px">
+
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Enter New UserName " id="name" required>
+            <input type="password" placeholder="Enter New Password" id="pas" required>
+            <input type="button" value="cancel" id="cancel" onclick="cancel()">
+            <input type="button" value="Set" id="forgot" onclick="set()">
+            </div>
+            
+        </div> 
+        <div class="text">
+            <h1>Add New Password And UserName</h1>
+        </div>
+    </div>
+</body>
+</html>

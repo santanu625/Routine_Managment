@@ -1,0 +1,55 @@
+.wel{
+    width: auto;
+    background-image: url(gmit.jpeg);
+    height: 700px;
+    background-size: cover;
+}
+.text{
+    width: auto;
+    font-size: 30px;
+    text-align: center;
+}
+.button{
+    width: auto;
+    height: 637px;
+    display: flex;
+}
+#notice{
+    width: 200px;
+    height: 50px;
+    font-size: 40px;
+    font-weight: bolder;
+    background: none;
+    color:blue;
+    margin-left: 200px;
+    margin-top: 200px;
+    text-shadow: 10px 10px 10px blue;
+    
+
+}
+#routine{
+    width: 200px;
+    height: 50px;
+    font-size: 40px;
+    font-weight: bolder;
+    background: none;
+    color: blue;
+    margin-left: 200px;
+    margin-top: 200px;
+    text-shadow: 10px 10px 10px blue;
+    
+
+}
+#hod{
+    width: 200px;
+    height: 50px;
+    font-size: 40px;
+    font-weight: bolder;
+    background: none;
+    color: blue;
+    margin-left: 200px;
+    margin-top: 200px;
+    text-shadow: 10px 10px 10px blue;
+    
+
+}
